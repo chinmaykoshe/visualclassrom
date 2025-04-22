@@ -31,12 +31,12 @@ const courses = [
 const Sitemap = () => {
   return (
     <div className="bg-gray-100 py-12 px-6">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-full md:max-w-5xl">
         {/* Title */}
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">Sitemap</h1>
 
         {/* Sitemap Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Main Sections */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold text-gray-700 mb-4">Main Pages</h2>

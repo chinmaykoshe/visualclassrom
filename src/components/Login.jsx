@@ -52,7 +52,7 @@ const Login = () => {
                 setSuccessMessage("Login Successful!");
 
                 // Clear previous user data
-                localStorage.removeItem("user");
+                localStorage.clear();
 
                 // Store user details
                 localStorage.setItem("user", JSON.stringify(data.user));

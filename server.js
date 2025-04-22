@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema({
   email: String,
   password: String, // Stored as plain text (⚠️ Not secure)
   data: { type: String, default: "NA" },
-  courses: { type: String, default: "NA" }
+  courses: { type: [String], default: [] }, // Array to store multiple course titles
 });
 
 const User = mongoose.model("User", UserSchema, "users");
@@ -65,16 +65,49 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/users/:id", async (req, res) => {
-    try {
-      const user = await User.findById(req.params.id);
-      if (!user) return res.status(404).json({ message: "User not found" });
-      res.json(user);
-    } catch (error) {
-      console.error("Error fetching user:", error);
-      res.status(500).json({ message: "Internal Server Error" });
+  try {
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+    res.json(user);
+  } catch (error) {
+    console.error("Error fetching user:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+app.put('/users/:id', async (req, res) => {
+  const { id } = req.params;
+  const { name, email, courses } = req.body;
+
+  try {
+    const user = await User.findById(id);
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
     }
-  });
-  
+
+    // Update profile fields if provided
+    if (name) user.name = name;
+    if (email) user.email = email;
+
+    // Update courses if provided
+    if (courses) {
+      // Ensure courses is an array
+      const newCourses = Array.isArray(courses) ? courses : [courses];
+
+      // Add new courses that are not already enrolled
+      newCourses.forEach((course) => {
+        if (!user.courses.includes(course)) {
+          user.courses.push(course);
+        }
+      });
+    }
+
+    await user.save();
+    res.json({ message: 'User updated successfully', user });
+  } catch (error) {
+    console.error('Update error:', error);
+    res.status(500).json({ message: 'Server error', error });
+  }
+});
 
 // Start Server
 app.listen(5000, () => {
