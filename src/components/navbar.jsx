@@ -19,7 +19,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
-          <img src="logo.PNG" alt="Logo" className="w-14 h-14" />
+          <img src="logo.png" alt="Logo" className="w-14 h-14" />
         </NavLink>
 
         {/* Desktop Navigation Links */}

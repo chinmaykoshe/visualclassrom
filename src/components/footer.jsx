@@ -8,7 +8,7 @@ function Footer() {
         {/* Left Column - Marquee Text */}
         <div className="flex items-center justify-center md:justify-start">
           <p className="font-bold text-yellow-400 text-lg">
-            © ABC Learning Center - Empowering Students for Success!
+            © VISUAL CLASSROOM - Empowering Students for Success!
           </p>
         </div>
 
@@ -26,11 +26,11 @@ function Footer() {
         <div className="flex flex-col items-center md:items-end space-y-3">
           <a href="#" className="flex items-center space-x-3 hover:text-blue-400 text-lg">
             <img src="facebook.jpg" alt="Facebook" className="h-6" />
-            <span>@abc_learning_center</span>
+            <span>@VISUAL CLASSROOM</span>
           </a>
           <a href="#" className="flex items-center space-x-3 hover:text-blue-300 text-lg">
             <img src="twitterimage.png" alt="Twitter" className="h-6" />
-            <span>@abc_learning_center</span>
+            <span>@VISUAL CLASSROOM</span>
           </a>
         </div>
 

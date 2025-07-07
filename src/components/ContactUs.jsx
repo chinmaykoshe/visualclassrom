@@ -19,7 +19,7 @@ const ContactUs = () => {
                 📞 <span className="ml-2">+91 98765 43210</span>
               </p>
               <p className="flex items-center mt-2">
-                📧 <span className="ml-2">contact@abclearning.com</span>
+                📧 <span className="ml-2">contact@VISUALCLASSROOM.com</span>
               </p>
             </div>
 

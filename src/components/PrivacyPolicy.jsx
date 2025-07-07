@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
             <p>
-              Welcome to ABC Learning Center. Your privacy is important to us, and we are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.
+              Welcome to VISUAL CLASSROOM. Your privacy is important to us, and we are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.
             </p>
           </section>
 
@@ -72,14 +72,14 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold mb-3">7. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us at:  
-              <strong> support@abclearning.com</strong>
+              <strong> support@VISUAL CLASSROOM.com</strong>
             </p>
           </section>
         </div>
 
         {/* Footer */}
         <div className="text-center mt-8 text-gray-500">
-          <p>© 2025 ABC Learning Center. All rights reserved.</p>
+          <p>© 2025 VISUAL CLASSROOM. All rights reserved.</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div className="bg-gray-100 py-12 px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Title */}
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">About ABC Learning Center</h1>
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">About VISUAL CLASSROOM</h1>
 
         {/* History Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center bg-white p-6 rounded-lg shadow-lg">
@@ -13,7 +13,7 @@ const AboutUs = () => {
           <div>
             <h3 className="text-2xl font-semibold text-gray-700 mb-3">Our History</h3>
             <p className="text-gray-600 leading-relaxed">
-              ABC Learning Center started on **1st January 2005**, founded by **Jony Dsoza**. 
+              VISUAL CLASSROOM started on **1st January 2005**, founded by **Jony Dsoza**. 
               We are passionate about providing high-quality **coding education** and have trained **over 2 lakh students** worldwide. 
               With **172 centers** across India and **internationally in Dubai**, our mission is to shape future developers and IT professionals.
             </p>

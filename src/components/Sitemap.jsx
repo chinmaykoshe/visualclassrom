@@ -74,7 +74,7 @@ const Sitemap = () => {
 
         {/* Footer Section */}
         <div className="text-center mt-12 text-gray-600">
-          <p>© 2025 ABC Learning Center. All rights reserved.</p>
+          <p>© 2025 VISUAL CLASSROOM. All rights reserved.</p>
         </div>
       </div>
     </div>
