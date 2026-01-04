@@ -42,6 +42,3 @@ The platform offers courses in the following technologies:
 
 ### Other Features
 - Additional courses and content coming soon
-
-## Project Structure
-
